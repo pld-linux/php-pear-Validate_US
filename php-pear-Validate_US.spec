@@ -9,6 +9,7 @@ Summary(pl):	%{_pearname} - Klasa sprawdzaj±ca poprawno¶æ dla Stanów Zjednoczony
 Name:		php-pear-%{_pearname}
 Version:	0.5.2
 Release:	1
+Epoch:		0
 License:	new BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -16,8 +17,8 @@ Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Validate_US/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
-Requires:	php-pear
 Requires:	php-common >= 3:4.2.0
+Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -31,7 +32,8 @@ Package containes locale validation for US such as:
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-Pakiet do sprawdzania poprawno¶ci danych dla Stanów Zjednocznych:
+Pakiet do sprawdzania poprawno¶ci dla Stanów Zjednocznych danych
+takich jak:
 - numer ubezpieczenia spo³ecznego (SSN)
 - kod pocztowy
 - region (stan)
@@ -71,4 +73,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files tests
 %defattr(644,root,root,755)
-%{php_pear_dir}/tests/Validate_US/tests/validate_US.phpt
+%{php_pear_dir}/tests/Validate_US
