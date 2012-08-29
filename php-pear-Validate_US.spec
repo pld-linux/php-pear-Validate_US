@@ -7,13 +7,13 @@
 Summary:	%{_pearname} - Validation class for US
 Summary(pl.UTF-8):	%{_pearname} - Klasa sprawdzająca poprawność dla Stanów Zjednoczonych
 Name:		php-pear-%{_pearname}
-Version:	0.5.4
-Release:	3
+Version:	0.5.5
+Release:	2
 Epoch:		0
 License:	new BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	8f1ab668fefc444fd4cd57abab196144
+# Source0-md5:	c62f471628d882ae9cc9b95e73631d39
 URL:		http://pear.php.net/package/Validate_US/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
